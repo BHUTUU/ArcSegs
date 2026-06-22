@@ -16,7 +16,7 @@ namespace ArcSegs
             Document doc = Application.DocumentManager.MdiActiveDocument;
             if (doc == null) return;
             Editor ed = doc.Editor;
-            PromptIntegerOptions pio = new PromptIntegerOptions("\nEnter number of segments per unit length : ");
+            PromptIntegerOptions pio = new PromptIntegerOptions("\nEnter the total number of segments: ");
             pio.DefaultValue = 1;
             pio.AllowNegative = false;
             pio.AllowZero = false;
